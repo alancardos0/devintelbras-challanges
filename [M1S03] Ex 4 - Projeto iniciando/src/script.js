@@ -6,4 +6,8 @@ const GuestList = function(name,lastName,sector,age){
 
 }
 
+const list = []
+
 const guest1 = new GuestList("Alan","Matheus","Camarote","19")
+
+list.push(guest1)
