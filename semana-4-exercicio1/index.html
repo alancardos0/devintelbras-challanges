@@ -5,14 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conta Bancaria Parte 1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="getAndCalculateValue()">
   <header>
     <h1>Conta Bancaria</h1>
   </header>
   <main>
     <section>
-
+      <div>
+        <select name="nameClient" id="nameClient">
+        </select>
+      </div>
+      <div>
+        <select name="bankAccount" id="bankAccount">
+          <option value="Saque">Sacar</option>
+          <option value="Depositar">Depositar</option>
+        </select>
+      </div>
+      
+      <div>
+        <input type="text" placeholder="Valor" id="money">
+      </div>
+      <div>
+        <input type="text" id="password" placeholder="Senha">
+      </div>
+      <div>
+        <button type="submit" onclick="getAndCalculateValue()">Confirmar</button>
+      </div>
     </section>
   </main>
   
